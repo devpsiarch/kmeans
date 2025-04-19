@@ -20,7 +20,13 @@ int main(int argc,char*argv[]){
 
     tester.appendflags(&tester,"-Wall");
     tester.appendflags(&tester,"-Wextra");
+    tester.appendflags(&tester,"-lraylib");
+    tester.appendflags(&tester,"-lGL");
     tester.appendflags(&tester,"-lm");
+    tester.appendflags(&tester,"-lpthread");
+    tester.appendflags(&tester,"-ldl");
+    tester.appendflags(&tester,"-lrt");
+    tester.appendflags(&tester,"-lX11");
     tester.appendflags(&tester,"-o");
 
     tester.construct(&tester);
